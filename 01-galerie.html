@@ -62,17 +62,18 @@
     imageaffichee: 'https://picsum.photos/id/237/400/300',
 }">
     <h1>Galerie</h1>
-<p>lorem⇥</p>
+    <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
+    @click="imageaffichee = 'https://picsum.photos/id/236/200/300">
+    <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
+    @click="imageaffichee = 'https://picsum.photos/id/237/200/300">
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eaque nesciunt! Inventore architecto voluptate ab consectetur temporibus esse aspernatur? Nisi odio maiores maxime doloribus perspiciatis sequi dolorum recusandae tempora omnis!</p>
+
 <div class="overlay"
     x-show="imageaffichee"
     @click="imageaffichee = null"
     @keyup.escape.window="imageaffichee = null">
     <figure><img :src="imageaffichee" alt="image 237... un chiot"></figure>
-    
-    <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
-    @click="imageaffichee = 'https://picsum.photos/id/236/200/300">
-    <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
-    @click="imageaffichee = 'https://picsum.photos/id/237/200/300">
 </div>
 
 </body>
