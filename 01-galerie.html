@@ -62,7 +62,9 @@
 }">
     <h1>Galerie</h1>
 <p>lorem⇥</p>
-<div class="overlay">
+<div class="overlay"
+    x-show="imageaffichee"
+    @click="imageaffichee = null">
     <figure><img :src="imageaffichee" alt="image 237... un chiot"></figure>
 </div>
 
